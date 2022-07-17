@@ -27,11 +27,11 @@ a{
     font-size: 1rem;
     font-weight: 400;
     padding-bottom: .25rem;
-    
+
 }
 
 /* .abajo>div{
-    visibility: hidden; Al alterar las márgenes y el height no es necesaria esta propiedad 
+    visibility: hidden; Al alterar las márgenes y el height no es necesaria esta propiedad
    opacity: 0;
    height: 0;
    padding: 0;
@@ -42,12 +42,12 @@ body{
     display: flex;
     flex-direction:column;
     min-height: 100vh;
-    background-color: rgba(235, 223, 187,40%); 
+    background-color: rgba(235, 223, 187,40%);
 }
 
 .coffe-time{
     width: 100%;
-} 
+}
 
 .cont-as-p{
     width: 45%;
@@ -57,7 +57,7 @@ body{
 
 .cont-as-img{
     width: 30%;
-   
+
 }
 .contacto{
     width: 40%;
@@ -122,7 +122,7 @@ body{
     transition: 0.75s;
 }
 .container-size{
-    width: 100%; 
+    width: 100%;
     min-height: 80vh;
 }
 /*Buena forma de hacer una galeria de imagenes sin usar bootstrap*/
@@ -147,26 +147,26 @@ body{
     font-size: 4rem;
     font-family: 'Abril Fatface', cursive;
     color: #eb9553;
-    margin-right: 4rem; 
+    margin-right: 4rem;
 }
 
 .formulario-contacto{
     display: block;
-    
+
     /* border: medium solid #8b311d; */
     width: 30%;
     padding: 2rem;
     background-color: rgb(231, 224, 201);
     border-radius: 1rem;
   }
-  
+
   .formulario-contacto > *{
       display: block;
       font-family: "Roboto";
       font-size: 16px;
 
   }
-  
+
   .formulario-contacto > input,textarea{
       width: 100%;
       margin-bottom: .75rem;
@@ -175,7 +175,7 @@ body{
       border: none;
       border-bottom: medium solid #c42c4a;
   }
- 
+
   .formulario-contacto >label{
       font-family: 'Raleway';
       font-weight: 700;
@@ -191,7 +191,7 @@ body{
       color: #fff;
       cursor: pointer;
   }
-  
+
   .formulario-contacto input[type="submit"]:hover{
       background-color: rgba(196, 44, 74,85%);
   }
@@ -201,7 +201,7 @@ header{
     height: 100vh;
     background-image: url(../Images/Cafe-fondo.jpg);
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
 /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,7 +210,7 @@ header{
     padding-bottom: 0;
     padding-top: 0;
     background-color: #fae6aa;
-     background-color: #FFE2B2; 
+     background-color: #FFE2B2;
     background-color: rgb(235, 223, 187);
     position: sticky;
     top: 0; */
@@ -233,7 +233,7 @@ header{
     height: 80%;
 }
 .item-corp-img>img{
-    
+
     width: 100%;
     height: 90%;
     object-fit: cover;
@@ -245,7 +245,7 @@ header{
     justify-items: center;
     align-self: center;
     border-radius: 5px;
-    background-image: url(../Images/prueba.jpg);
+    /* background-image: url(../Images/prueba.jpg); */
     background-size: cover;
     box-shadow: 3px 5px 5px rgba(3,32,51,.8);
 }
@@ -287,7 +287,7 @@ nav{
     padding-top: 20px;
     text-align: center;
     background-color: rgba(235, 223, 187,.2);
-    
+
 }
 .nav-menu{
     display: flex;
@@ -301,7 +301,7 @@ nav{
     list-style: none;
     padding: 1rem 2rem;
     margin:0 .5rem ;
-    
+
 }
 
 .section-size{
@@ -400,7 +400,7 @@ footer{
     margin: 0;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
 .item-contact .bx{
@@ -415,6 +415,8 @@ footer{
 
 .container-contact{
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 2.5rem;
@@ -428,4 +430,91 @@ footer{
     justify-content: space-evenly;
     margin-bottom: 5rem;
     background-color: rgb(231, 224, 201);
+}
+.product-1{
+    background-image: url(../Images/prueba.jpg);
+}
+.product-2{
+    background-image: url(../Images/2.jpg);
+}
+.product-3{
+    background-image: url(../Images/4.jpg);
+}
+.product-4{
+    background-image: url(../Images/3.jpg);
+}
+
+
+
+@media screen and (max-width: 890px){
+    /* main{
+        background-color: #000;
+    } */
+    main{
+        margin: 0;
+    }
+    .container-about-us{
+        flex-direction: column;
+    }
+    .container-about-us>*{
+        width: 80%;
+    }
+    
+    .cont-as-img{
+        margin-top: 3rem;
+    }
+    .we-offer{
+        width: 80%;
+    }
+    .philosophy{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .philosophy>*{
+        width: 80%;
+    }
+    .container-corp-p >h2{
+        display: inline;
+        margin: 0;
+    }
+
+    .container-corp-img{
+        margin-top: 3rem;
+        align-items: stretch;
+    }
+
+    .item-corp-img{
+        width: 30%;
+        height: 40vh;
+    }
+    .container-form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-form>*{
+        width: 60%;
+        padding: 2rem 0;
+    }
+    .sticky img{
+        margin:.5rem 2rem;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 792px){
+    
+    .section-size{
+        padding-top: 14rem;
+    }
+    
+    .sticky{
+        flex-direction: column;
+    }
+    .sticky img{
+        margin: .5rem 0
+    }
+    .we-offer{
+        margin-top:0;
+    }
+
 }
