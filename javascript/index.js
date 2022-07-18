@@ -4,8 +4,10 @@
 //     header.classList.toggle("abajo",window.scrollY>0);
 // })
 
-var navbar = document.getElementById("nav-container");
-var menu = document.getElementById("nav-menu");
+let navbar = document.getElementById("nav-container");
+let menu = document.getElementById("nav-menu");
+
+const btnSwitch = document.querySelector('#switch');
 
 
 window.onscroll = function(){
@@ -18,3 +20,18 @@ window.onscroll = function(){
     }
 }
 
+
+//Cambiamos el color a modo oscuro, utlizamos el toggle para activar y desactivar las clases dark y active
+
+btnSwitch.addEventListener('click', ()=>{
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+});
+
+//Con esta funcion cambiamos el texto del boton de cambio de color
+
+function FbotonOn() {
+    if (btnSwitch.innerHTML == 'Modo Claro') 
+        btnSwitch.innerHTML = 'Modo Oscuro';
+    else btnSwitch.innerHTML = 'Modo Claro'; 
+  }

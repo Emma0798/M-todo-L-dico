@@ -44,6 +44,33 @@ body{
     min-height: 100vh;
     background-color: rgba(235, 223, 187,40%);
 }
+body.dark{
+    background-color: rgb(51, 50, 50);
+}
+body.dark p{
+    color: #fff;
+}
+body.dark .contacto>p{
+    color: #000;
+}
+body.dark .item-contact{
+    background-color: rgb(68, 66, 66);
+}
+
+.switch{
+    padding: 1rem;
+    font-family: 'Raleway';
+    color: #fff;
+    background-color: rgb(51, 50, 50);
+    border: none;
+}
+.active{
+    padding: 1rem;
+    font-family: 'Raleway';
+    color: rgb(51, 50, 50);
+    background-color: rgb(231, 224, 201);
+    border: none;
+}
 
 .coffe-time{
     width: 100%;
@@ -150,6 +177,15 @@ body{
     margin-right: 4rem;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    font-family: 'Raleway';
+}
+
 .formulario-contacto{
     display: block;
 
@@ -223,6 +259,11 @@ header{
     padding: 0 1rem;
     color: #c42c4a;
     font-size: 2.5rem;
+    transition: all 1.2s ease;
+}
+.icon-contact i:hover{
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
 .item-corp-img{
